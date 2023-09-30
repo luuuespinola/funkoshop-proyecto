@@ -193,3 +193,52 @@ header {
     background-color: var(--primary-900);
     color: var(--light-font-solid);
 }
+
+/* COLECCIONES */
+
+.colleccion {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: var(--spancing-24);
+    align-items: center;
+    padding: var(--spancing-16) 0;
+}
+
+.colleccion:nth-child(2) .card-item__cover {
+    order: -1;
+}
+
+.colleccion__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spancing-24);
+    align-items: start;
+}
+
+.colleccion__title {
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    font-weight: 500;
+}
+
+.colleccion__text {
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    font-weight: 300;
+    border-bottom: 2px solid var(--primary-solid);
+    padding-bottom: var(--spancing-20);
+}
+.colleccion__link {
+    display: inline-block;
+    font-size: var(--font-medium);
+    background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+    padding: var(--spancing-16) var(--spancing-36);
+    border-radius: 50%;
+    font-weight: 500;
+    transition: background .3s ease-in-out;
+}
+
+.colleccion__link:hover {
+    background-color: var(--primary-900);
+}
